@@ -1,21 +1,18 @@
-# Mavzu: Sinflar bilan tanishish - hayvonlarni yaratish 1. “Hayvon” sinfini yarating: - Sizning sinfingiz 
-# hayvonning nomi, yoshi va turi uchun atributlarga (o'zgaruvchilar) ega bo'lishi kerak. - Hayvon haqidagi 
-# ma'lumotni ko'rsatish uchun usul (funktsiya) qo'shing, masalan: ""Mening ismim [ism], men [yosh] yoshdaman va 
-# men [hayvon turi]"". 
+class Hayvon:
+    def __init__(self, nomi, yosh, turi):
+        self.nomi = nomi
+        self.yosh = yosh
+        self.turi = turi
+
+    def info(self):
+        print(f"mening ismim {self.nomi}, mening yoshim {self.yosh}da, men {self.turi}man")
 
 
-class Odam:
-    def __init__(self, name, age, type):
-        self.name = name
-        self.age = age
-        self.type = type
 
+hayvon_1 = Hayvon("Shamshod", 4, "kuchuk")
+hayvon_2 = Hayvon("Yolbars", 6, "mushuk")
 
-hayvon_1 = ("Temur", "5", "kuchuk")
-hayvon_2 = ("Shamshod", "4", "mushuk")
-
-
-print(hayvon_1)
-print(hayvon_2)
+hayvon_1.info()
+hayvon_2.info()
 
 
